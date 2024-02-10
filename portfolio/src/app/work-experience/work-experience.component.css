@@ -1,20 +1,41 @@
 .workexperience{
+    display: flex;
+}
+
+.role{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.company{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.experienceyears{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+.timeperiod{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+.left-div{
     min-width: 200px;
-    background-color: #6c696978;
+    background-color: #6c696962;
     border-radius: 25px;
     padding: 8px;
     padding-left: 15px;
     min-height: 100px;
 }
 
-.role{
-    font-size: 22px;
-    font-family: "Garamond", Times, serif;
-    margin-bottom: 6px;
-}
-
-.company{
-    font-size: 15px;
-    font-family: "Garamond", Times, serif;
-    margin-bottom: 6px;
+.right-div{
+    min-width: 200px;
+    background-color: #6c696962;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 15px;
+    min-height: 100px;
+    margin-left: 20px;
 }
