@@ -1,0 +1,37 @@
+<div>
+    <div class="Portfolio-base">
+        <button class="theme-button"></button>
+        <div class="Portfolio-base-innerdiv">
+            <div class="left-div">
+                <div class="left-inter">
+                    <p class="fonttype1">Rahul R</p>
+                    <p class="fonttype2">24 Years</p>
+                    <p class="fonttype2">GE HealthCare</p>
+                </div>
+            </div>
+            <div class="right-div">
+                <img src="assets\profileImg.jpg" alt="profile-img" class="profile-image">
+                <div class="heading-div">
+                    <p class="fonttype3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam natus maxime quaerat quod excepturi eius placeat dolore perspiciatis accusamus quam necessitatibus autem, consequuntur in, vitae eveniet, eligendi sit. Minima, beatae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, optio. Praesentium esse obcaecati quae nam laboriosam qui accusantium possimus sit. Incidunt eveniet fuga commodi nisi tempore necessitatibus quos ad laboriosam!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-content">
+        <div class="portfolio-content-inner">
+            <div  class="portfolio-sidenav">
+                <ul class="tabs">
+                    <li tabindex="0" class="tab icon-Work"><a routerLink="/work-experience"><span>Work Experience</span></a></li>
+                    <li tabindex="0" class="tab icon-Education"><a routerLink="/education"><span>Education</span></a></li>
+                    <li tabindex="0" class="tab icon-Achievements"><a routerLink="/achievements"><span>Achievements</span></a></li>
+                    <li tabindex="0" class="tab icon-Review"><a routerLink="/reviews"><span>Reviews</span></a></li>
+                </ul>
+            </div>
+            <div class="portfolio-contents">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

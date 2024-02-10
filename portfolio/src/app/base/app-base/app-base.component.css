@@ -1,0 +1,141 @@
+.Portfolio-base{
+    height: 380px;
+}
+
+.theme-button{
+    margin-top: 34px;
+    margin-left: 50px;
+    width: 53px;
+    height: 51px;
+    border-radius: 50%;
+    border: 1px;
+    color: #252424;
+    background-color: #403F3F;
+}
+
+.heading-div{
+    background-color: #6C6969;
+    margin-top: -240px;
+    height: 305px;
+    margin-left: 160px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    z-index: 1;
+}
+.profile-image{
+    z-index: 2;
+    width: 246px;
+    height: 185px; 
+    object-fit: cover;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.right-div{
+    width:100%;
+    margin-top: 10px;
+}
+
+.left-div{
+    display: grid;
+    width: 20%;
+    margin-top: 10px;
+    z-index: 3px;
+    text-align: center;
+}
+
+.Portfolio-base-innerdiv{
+    display: flex;
+    margin-top: 60px;
+}
+.left-inter{
+    padding-top: 60px;
+}
+.fonttype1{
+    font-size: 40px;
+    font-family:Georgia;
+}
+
+.fonttype2{
+    font-size: 20px;
+}
+.fonttype3{
+    margin-left: 100px;
+    padding-top: 60px;
+    color: white;
+    font-size: 18px;
+    font-family: Georgia ;
+}
+
+.portfolio-content{
+    margin: 60px 20px 20px 20px;
+    background-color: #D9D9D9;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.portfolio-content-inner{
+    display: flex;
+}
+.sidenav{
+    background-color: #6C6969;
+    width: 280px;
+    border-radius: 50px;
+}
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc; /* Optional: Add a border at the bottom for separation */
+    width: fit-content;
+}
+
+.tab {
+    
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #6C6969; /* Optional: Background color when not selected */
+    border-right: 1px solid #ccc; /* Optional: Add a border between tabs */
+    border-radius: 10px;
+    width: 120px;
+}
+
+.tab:hover,
+.tab:focus {
+    background-color: #6c696988; /* Optional: Background color on hover/focus */
+}
+
+.tab a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tab span {
+    margin-left: 10px;
+}
+
+/* Add styles for the icon classes if needed */
+.icon-Work {
+    /* Add styles for the icon class */
+}
+
+.icon-Education {
+    /* Add styles for the icon class */
+}
+
+.icon-Achievements {
+    /* Add styles for the icon class */
+}
+
+.icon-Review {
+    /* Add styles for the icon class */
+}
+
+.portfolio-contents{
+    margin-left: 20px;
+    height: fit-content;
+}
+
