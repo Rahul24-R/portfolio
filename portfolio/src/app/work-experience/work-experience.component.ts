@@ -12,11 +12,11 @@ export class WorkExperienceComponent {
 
   ngOnInit(){
     let a : workexperiencemodal = {
-      years: 0,
-      role: 'nljnllj',
-      startdate: ',mnmmnl',
-      enddate: ',mmnmn',
-      company: 'm,;m,;',
+      years: 1,
+      role: 'Software Engineer',
+      startdate: 'March 2023',
+      enddate: 'Present',
+      company: 'GE HealthCare',
       details: ["jhhjhhhkjkjhj","njnjnnnjnj","nbkkbjkjjbjjbbjbbjb"]
     }
     this.workexperience?.push(a);

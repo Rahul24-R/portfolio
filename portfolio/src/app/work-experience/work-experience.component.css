@@ -6,3 +6,15 @@
     padding-left: 15px;
     min-height: 100px;
 }
+
+.role{
+    font-size: 22px;
+    font-family: "Garamond", Times, serif;
+    margin-bottom: 6px;
+}
+
+.company{
+    font-size: 15px;
+    font-family: "Garamond", Times, serif;
+    margin-bottom: 6px;
+}
