@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {} from '@angular/material/sidenav'
+import {  Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-base',
@@ -7,5 +7,16 @@ import {} from '@angular/material/sidenav'
   styleUrls: ['./app-base.component.css']
 })
 export class AppBaseComponent {
+  darkMode = false;
+  constructor(private renderer: Renderer2) {}
+  ToggleTheme() {
+    this.darkMode = !this.darkMode;
+    const divToToggle = document.getElementsByClassName('start')
+    if (this.darkMode) {
+      this.renderer.addClass(divToToggle, 'dark-theme');
+    } else {
+      this.renderer.removeClass(divToToggle, 'dark-theme');
+    }
+  }
 
 }

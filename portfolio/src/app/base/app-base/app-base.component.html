@@ -1,6 +1,26 @@
-<div>
+<div class="start">
     <div class="Portfolio-base">
-        <button class="theme-button"></button>
+        <div class="buttoncube">
+            <button class="theme-button" (click)="ToggleTheme()"></button>
+            <div class="cubeitem">
+                <div class="cube1">
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                </div>
+                <div class="cube">
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                </div>
+            </div>
+        </div>
         <div class="Portfolio-base-innerdiv">
             <div class="left-div">
                 <div class="left-inter">
@@ -12,8 +32,14 @@
             <div class="right-div">
                 <img src="assets\profileImg.jpg" alt="profile-img" class="profile-image">
                 <div class="heading-div">
-                    <p class="fonttype3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam natus maxime quaerat quod excepturi eius placeat dolore perspiciatis accusamus quam necessitatibus autem, consequuntur in, vitae eveniet, eligendi sit. Minima, beatae.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, optio. Praesentium esse obcaecati quae nam laboriosam qui accusantium possimus sit. Incidunt eveniet fuga commodi nisi tempore necessitatibus quos ad laboriosam!
+                    <h2 class="h2font">Hello, I'm Rahul R, a Software Engineer with a Passion for Building Innovative
+                        Solutions.</h2>
+                    <p class="fonttype3"> Specializing in building scalable applications using .NET, Angular framework,
+                        and cloud platforms like AWS. With 2 years of experience, I thrive on solving complex problems
+                        and collaborating with cross-functional teams to deliver high-quality solutions.<br> Outside of
+                        coding, I contribute to open-source projects and stay abreast of emerging technologies. I'm
+                        passionate about pushing the boundaries of software engineering and eager to explore new
+                        opportunities for innovation and growth. Let's connect and build something amazing together!
                     </p>
                 </div>
             </div>
@@ -21,11 +47,14 @@
     </div>
     <div class="portfolio-content">
         <div class="portfolio-content-inner">
-            <div  class="portfolio-sidenav">
+            <div class="portfolio-sidenav">
                 <ul class="tabs">
-                    <li tabindex="0" class="tab icon-Work"><a routerLink="/work-experience"><span>Work Experience</span></a></li>
-                    <li tabindex="0" class="tab icon-Education"><a routerLink="/education"><span>Education</span></a></li>
-                    <li tabindex="0" class="tab icon-Achievements"><a routerLink="/achievements"><span>Achievements</span></a></li>
+                    <li tabindex="0" class="tab icon-Work"><a routerLink="/work-experience"><span>Work
+                                Experience</span></a></li>
+                    <li tabindex="0" class="tab icon-Education"><a routerLink="/education"><span>Education</span></a>
+                    </li>
+                    <li tabindex="0" class="tab icon-Achievements"><a
+                            routerLink="/achievements"><span>Achievements</span></a></li>
                     <li tabindex="0" class="tab icon-Review"><a routerLink="/reviews"><span>Reviews</span></a></li>
                 </ul>
             </div>

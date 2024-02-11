@@ -1,8 +1,15 @@
-.Portfolio-base{
+.Portfolio-base {
     height: 380px;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-.theme-button{
+.start {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.theme-button {
     margin-top: 34px;
     margin-left: 50px;
     width: 53px;
@@ -13,7 +20,7 @@
     background-color: #403F3F;
 }
 
-.heading-div{
+.heading-div {
     background-color: #6C6969;
     margin-top: -240px;
     height: 305px;
@@ -22,21 +29,22 @@
     border-top-left-radius: 50px;
     z-index: 1;
 }
-.profile-image{
+
+.profile-image {
     z-index: 2;
     width: 246px;
-    height: 185px; 
+    height: 185px;
     object-fit: cover;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
 }
 
-.right-div{
-    width:100%;
+.right-div {
+    width: 100%;
     margin-top: 10px;
 }
 
-.left-div{
+.left-div {
     display: grid;
     width: 20%;
     margin-top: 10px;
@@ -44,49 +52,63 @@
     text-align: center;
 }
 
-.Portfolio-base-innerdiv{
+.Portfolio-base-innerdiv {
     display: flex;
     margin-top: 60px;
 }
-.left-inter{
+
+.left-inter {
     padding-top: 60px;
 }
-.fonttype1{
+
+.fonttype1 {
     font-size: 40px;
-    font-family:Georgia;
+    font-family: Georgia;
 }
 
-.fonttype2{
+.fonttype2 {
     font-size: 20px;
 }
-.fonttype3{
+
+.fonttype3 {
     margin-left: 100px;
-    padding-top: 60px;
+    padding-top: 10px;
     color: white;
     font-size: 18px;
-    font-family: Georgia ;
+    font-family: Georgia;
+    padding-right: 6px;
 }
 
-.portfolio-content{
+.h2font {
+    margin-left: 100px;
+    color: white;
+    font-family: Georgia;
+    padding-top: 40px;
+}
+
+.portfolio-content {
     margin: 60px 20px 20px 20px;
     background-color: #D9D9D9;
     padding: 30px;
     border-radius: 50px;
 }
 
-.portfolio-content-inner{
+.portfolio-content-inner {
     display: flex;
 }
-.sidenav{
+
+.sidenav {
     background-color: #6C6969;
     width: 280px;
     border-radius: 50px;
 }
+
 .tabs {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    border-bottom: 1px solid #ccc; /* Optional: Add a border at the bottom for separation */
+    border-bottom: 1px solid #ccc;
+    /* Optional: Add a border at the bottom for separation */
     width: fit-content;
 }
 
@@ -97,8 +119,10 @@
     cursor: pointer;
     flex-grow: 1;
     text-align: center;
-    background-color: #6C6969; /* Optional: Background color when not selected */
-    border-right: 1px solid #ccc; /* Optional: Add a border between tabs */
+    background-color: #6C6969;
+    /* Optional: Background color when not selected */
+    border-right: 1px solid #ccc;
+    /* Optional: Add a border between tabs */
     border-radius: 10px;
     width: 120px;
     color: white;
@@ -106,7 +130,8 @@
 
 .tab:hover,
 .tab:focus {
-    background-color: #6c696988; /* Optional: Background color on hover/focus */
+    background-color: #6c696988;
+    /* Optional: Background color on hover/focus */
 }
 
 .tab a {
@@ -135,8 +160,171 @@
     /* Add styles for the icon class */
 }
 
-.portfolio-contents{
+.portfolio-contents {
     margin-left: 20px;
     height: fit-content;
 }
 
+.light-theme {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+.dark-theme {
+    --background-color: #121212;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.cube {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    transform: rotateX(60deg) rotateY(20deg);
+}
+
+.side {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.762);
+    line-height: 20px;
+    text-align: center;
+}
+
+.side:nth-child(1) {
+    transform: translateZ(10px);
+    background-color: #6C6969;
+}
+
+.side:nth-child(2) {
+    transform: rotateY(180deg) translateZ(10px);
+    background-color: #6C6969;
+}
+
+.side:nth-child(3) {
+    transform: rotateY(90deg) translateZ(10px);
+    background-color: #6C6969;
+}
+
+.side:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(10px);
+    background-color: #6C6969;
+}
+
+.side:nth-child(5) {
+    transform: rotateX(90deg) translateZ(10px);
+    background-color: #6C6969;
+}
+
+.side:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(10px);
+    background-color: #6C6969;
+}
+
+.cube:hover {
+    .side:nth-child(1) {
+        transform: translateZ(10px);
+        background-color: #4c4c4c;
+    }
+
+    .side:nth-child(2) {
+        transform: translateX(20px);
+        background-color: #4c4c4c;
+    }
+
+    .side:nth-child(3) {
+        transform: translateY(20px);
+        background-color: #4c4c4c;
+    }
+
+    .side:nth-child(4) {
+        transform: translateX(20px);
+        background-color: #4c4c4c;
+    }
+
+    .side:nth-child(5) {
+        transform: translateY(20px);
+        background-color: #4c4c4c;
+    }
+
+    .side:nth-child(6) {
+        transform: translateZ(20px);
+        background-color: #4c4c4c;
+    }
+}
+
+.side:hover {
+    transform: translateZ(20px);
+}
+
+.cubeitem {
+    align-items: centre;
+    margin: 50px;
+    margin-left: auto;
+    display: flex;
+}
+
+.buttoncube {
+    display: flex;
+    height: 80px;
+}
+
+.cube1 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    transform: rotateX(65deg) rotateY(80deg);
+    margin-right: 6px;
+}
+
+.side1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.762);
+    line-height: 20px;
+    text-align: center;
+}
+
+.side1:nth-child(1) {
+    transform: translateZ(10px);
+    background-color: #6C6969;
+}
+
+.side1:nth-child(2) {
+    transform: rotateY(180deg) translateZ(15px);
+    background-color: #6C6969;
+}
+
+.side1:nth-child(3) {
+    transform: rotateY(90deg) translateZ(15px);
+    background-color: #6C6969;
+}
+
+.side1:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(15px);
+    background-color: #6C6969;
+}
+
+.side1:nth-child(5) {
+    transform: rotateX(90deg) translateZ(15px);
+    background-color: #6C6969;
+}
+
+.side1:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(15px);
+    background-color: #6C6969;
+}
+
+.cube1:hover {
+    transform: rotateX(20deg) rotateY(20deg);
+  }
