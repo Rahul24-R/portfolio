@@ -1,7 +1,33 @@
 <div class="start">
     <div class="Portfolio-base">
         <div class="buttoncube">
-            <button class="theme-button" (click)="ToggleTheme()"></button>
+            <div class="container">
+                <button class="theme-button" (click)="ToggleTheme()" >
+                    <lucide-icon name="chevron-right" [class.rotate]="showAdditionalButton" class="buttonicons menubutton"></lucide-icon>
+                </button>
+                <div *ngIf="showAdditionalButton" style="left: 80px;" id="additionalButton" [@slideInOut]>
+                    <a href="https://www.instagram.com/_the_crookedman_/" target="_blank">
+                        <button>
+                            <lucide-icon name="instagram"  class="buttonicons"></lucide-icon>
+                        </button>
+                    </a>
+                    <a href="mailto:rahulraghuk@gmail.com" target="_blank">
+                        <button>
+                            <lucide-icon name="at-sign" class="buttonicons"></lucide-icon>
+                        </button>
+                    </a>
+                    <a href="https://github.com/Rahul24-R" target="_blank">
+                        <button>
+                            <lucide-icon name="github" class="buttonicons"></lucide-icon>
+                        </button>
+                    </a>
+                    <a href="../../../assets/Rahul_Resume.pdf" download="Rahul_Resume.pdf">
+                        <button>
+                            <lucide-icon name="download" class="buttonicons"></lucide-icon>
+                        </button>
+                    </a>
+                </div>
+            </div>
             <div class="cubeitem">
                 <div class="cube1">
                     <div class="side1"></div>
@@ -32,7 +58,7 @@
             <div class="right-div">
                 <img src="assets\profileImg.jpg" alt="profile-img" class="profile-image">
                 <div class="heading-div">
-                    <h2 class="h2font">Hello, I'm Rahul R, a Software Engineer with a Passion for Building Innovative
+                    <h2 class="h2font">Hello, I'm Rahul R, A Software Engineer with a Passion for Building Innovative
                         Solutions.</h2>
                     <p class="fonttype3"> Specializing in building scalable applications using .NET, Angular framework,
                         and cloud platforms like AWS. With 2 years of experience, I thrive on solving complex problems

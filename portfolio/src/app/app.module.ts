@@ -9,7 +9,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { EducationComponent } from './education/education.component';
 import { AchievementsComponent } from './achievements/achievements.component';
-import { ReviewComponent } from './review/review.component'
+import { ReviewComponent } from './review/review.component';
+import { LucideAngularModule, ChevronRight,Instagram,AtSign ,Github ,Download  } from 'lucide-angular';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ReviewComponent } from './review/review.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    LucideAngularModule.pick({ ChevronRight , Instagram ,AtSign,Github ,Download })
   ],
   providers: [],
   bootstrap: [AppComponent]

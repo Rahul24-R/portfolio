@@ -328,3 +328,52 @@ body {
 .cube1:hover {
     transform: rotateX(20deg) rotateY(20deg);
   }
+
+  .container{
+    position: relative;
+  }
+
+  #additionalButton{
+    position: absolute;
+    top: 0;
+    display: flex;
+    margin-top: 34px;
+    margin-left: 30px;
+  }
+
+  #additiobalButton button{
+    display: block;
+    margin: 10px;
+
+  }
+  button{
+    margin-left: 10px;
+    width: 53px;
+    height: 51px;
+    border-radius: 50%;
+    border: 1px;
+    color: #252424;
+    background-color: #403F3F;
+  }
+
+  .buttonicons{
+    color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+
+  button:hover {
+    transform: translateY(3px);
+  }
+
+  .menubutton{
+    transition: transform 0.3s ease; 
+  }
+
+  .rotate{
+    transform: rotate(180deg);
+  }
+
+  .theme-button:hover {
+    transform: rotate(360deg); /* Adjust the rotation degree as needed */
+    transition: transform 0.9s ease; /* Apply transition on hover */
+  }
