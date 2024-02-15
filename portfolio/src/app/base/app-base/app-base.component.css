@@ -377,3 +377,102 @@ body {
     transform: rotate(360deg); /* Adjust the rotation degree as needed */
     transition: transform 0.9s ease; /* Apply transition on hover */
   }
+
+  @media only screen and (max-width: 800px) {
+    .start{
+        width: 100%;
+    }
+    .Portfolio-base {
+        width: 100%; /* Adjusted width to fit content on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; /* Adjusted container to stack content vertically on mobile */
+        align-items: center; /* Center-align content */
+    }
+
+    .heading-div {
+        height: auto;
+        margin-left: 0;
+        margin-top: 6px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        padding: 8px;
+    }
+    .h2font {
+        margin-left: auto;
+        color: white;
+        font-family: Georgia;
+        padding-top: 40px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .fonttype3 {
+        place-items: center;
+        margin-left: auto;
+        padding-top: 10px;
+        color: white;
+        font-size: 18px;
+        font-family: Georgia;
+        padding-right: 6px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .profile-image {
+        width: 100%; /* Adjusted width for full width on mobile */
+        height: auto; /* Allowing image to adjust its height */
+        border-bottom-left-radius: 0; /* Removed border radius */
+        border-top-left-radius: 0; /* Removed border radius */
+        margin-top: 20px; /* Adjusted margin for spacing */
+    }
+
+    #additionalButton {
+        position: absolute;
+        top: 0;
+        display: grid;
+        margin-top: 34px;
+        margin-left: 30px;
+    }
+    .heading-div{
+        width: 100%;
+    }
+    .left-div{
+        display: none;
+    }
+    button[_ngcontent-ng-c3592940174] {
+        margin-left: 10px;
+        width: 53px;
+        height: 51px;
+        border-radius: 50%;
+        border: 1px;
+        color: #252424;
+        background-color: #403F3F;
+        margin-bottom: 6px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80px;
+    }
+    .theme-button {
+        margin-top: 34px;
+        margin-left: 50px;
+        width: 53px;
+        height: 51px;
+        border-radius: 50%;
+        border: 1px;
+        color: #252424;
+        background-color: #403F3F;
+    }
+    .portfolio-content[_ngcontent-ng-c3592940174] {
+        margin: 60px 20px 20px 20px;
+        background-color: #D9D9D9;
+        padding: 30px;
+        border-radius: 50px;
+        display: none;
+    }
+}
