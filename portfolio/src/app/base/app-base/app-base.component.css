@@ -388,9 +388,7 @@ body {
     }
 
     .container {
-        display: flex;
-        flex-direction: column; /* Adjusted container to stack content vertically on mobile */
-        align-items: center; /* Center-align content */
+        height: 110px;
     }
 
     .heading-div {
