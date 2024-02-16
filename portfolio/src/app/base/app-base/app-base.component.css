@@ -466,11 +466,17 @@ body {
         color: #252424;
         background-color: #403F3F;
     }
-    .portfolio-content[_ngcontent-ng-c3592940174] {
-        margin: 60px 20px 20px 20px;
+    .portfolio-content {
+        margin: 0px;
         background-color: #D9D9D9;
-        padding: 30px;
-        border-radius: 50px;
+        border-radius: 0px;
+    }
+    .portfolio-sidenav{
         display: none;
+    }
+    .workexperience {
+        display: flex;
+        margin-bottom: 8px;
+        flex-direction: column;
     }
 }
