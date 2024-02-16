@@ -378,6 +378,13 @@ body {
     transition: transform 0.9s ease; /* Apply transition on hover */
   }
 
+  .updateddate{
+    padding-top: 8px;
+    text-align: right;
+    padding-right: 8px;
+    color: white;
+  }
+
   @media only screen and (max-width: 800px) {
     .start{
         width: 100%;
