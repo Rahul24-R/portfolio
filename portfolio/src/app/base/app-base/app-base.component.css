@@ -384,6 +384,9 @@ body {
     padding-right: 8px;
     color: white;
   }
+  .mobileroute{
+    display: none;
+  }
 
   @media only screen and (max-width: 800px) {
     .start{
@@ -485,5 +488,8 @@ body {
         display: flex;
         margin-bottom: 8px;
         flex-direction: column;
+    }
+    .mobileroute{
+        display: block;
     }
 }
