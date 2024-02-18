@@ -491,5 +491,16 @@ body {
     }
     .mobileroute{
         display: block;
+        margin-top: 30px;
+    }
+    .portfolio-content-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileroute-achievements{
+        padding: 10px;
+        margin: 10;
+        background-color: #6C6969;
     }
 }

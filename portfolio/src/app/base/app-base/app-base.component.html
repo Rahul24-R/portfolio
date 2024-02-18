@@ -2,13 +2,14 @@
     <div class="Portfolio-base">
         <div class="buttoncube">
             <div class="container">
-                <button class="theme-button" (click)="ToggleTheme()" >
-                    <lucide-icon name="chevron-right" [class.rotate]="showAdditionalButton" class="buttonicons menubutton"></lucide-icon>
+                <button class="theme-button" (click)="ToggleTheme()">
+                    <lucide-icon name="chevron-right" [class.rotate]="showAdditionalButton"
+                        class="buttonicons menubutton"></lucide-icon>
                 </button>
                 <div *ngIf="showAdditionalButton" style="left: 80px;" id="additionalButton" [@slideInOut]>
                     <a href="https://www.instagram.com/_the_crookedman_/" target="_blank">
                         <button>
-                            <lucide-icon name="instagram"  class="buttonicons"></lucide-icon>
+                            <lucide-icon name="instagram" class="buttonicons"></lucide-icon>
                         </button>
                     </a>
                     <a href="mailto:rahulraghuk@gmail.com" target="_blank">
@@ -98,4 +99,8 @@
             </div>
         </div>
     </div>
+    <div class="mobileroute-achievements">
+        <app-achievements class="mobileroute"></app-achievements>
+    </div>
+    
 </div>
