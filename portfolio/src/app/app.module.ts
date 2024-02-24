@@ -10,7 +10,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { EducationComponent } from './education/education.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { ReviewComponent } from './review/review.component';
-import { LucideAngularModule, ChevronRight, Instagram, AtSign, Github, Download, Linkedin, BookOpenText, BookOpen, Book } from 'lucide-angular';
+import { LucideAngularModule, ChevronRight, Instagram, AtSign, Github, Download, Linkedin, BookOpenText, BookOpen, Book ,Award} from 'lucide-angular';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
@@ -30,7 +30,7 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    LucideAngularModule.pick({ ChevronRight, Instagram, AtSign, Github, Download, Linkedin, BookOpenText, BookOpen, Book }),
+    LucideAngularModule.pick({ ChevronRight, Instagram, AtSign, Github, Download, Linkedin, BookOpenText, BookOpen, Book,Award }),
     MatCardModule, MatDividerModule, MatButtonModule, MatProgressBarModule
   ],
   providers: [],
