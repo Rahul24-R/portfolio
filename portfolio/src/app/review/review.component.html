@@ -1,0 +1,30 @@
+<h1> Fill the Form!<br>Its Easy</h1>
+<div>
+    <div class="Feedback-header">
+        <p>I hope you enjoyed exploring my personal digital portfolio. Your feedback matters to Me! Please take a moment
+            to share your thoughts on my profile. Thank you for helping me improve.</p>
+    </div>
+    <div class="container">
+        <div class="form-conatiner">
+            <div class="Review-form">
+                <form class="form" (submit)="submitFeedback()">
+                    <div>
+                        <input type="text" name="name" [(ngModel)]="feedback.name" required class="custom-input" placeholder="Name" >
+                    </div>
+
+                    <div>
+                        <input type="email" name="email" [(ngModel)]="feedback.MailID" required class="custom-input" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <textarea name="feedback" [(ngModel)]="feedback.Comment" required class="custom-input" placeholder="Comment"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="submit-button">{{buttonText}}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

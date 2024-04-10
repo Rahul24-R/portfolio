@@ -1,0 +1,17 @@
+<h1>A Peep To Present And Past</h1>
+
+<div>
+    <div *ngFor="let items of this.workexperience" class="workexperience">
+        <div class="left-div">
+            <p class="role">{{items.role}}</p>
+            <p class="company">{{items.company}}</p>
+            <p class="experienceyears">Years - {{items.years}}</p>
+            <p class="timeperiod">{{items.startdate}} - {{items.enddate}}</p>
+        </div>
+        <div class="right-div">
+            <div *ngFor="let desc of items.details">
+                <p>{{desc}}</p>
+            </div>
+        </div>
+    </div>
+</div>

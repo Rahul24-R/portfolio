@@ -1,0 +1,109 @@
+<div class="start">
+    <div class="Portfolio-base">
+        <div class="buttoncube">
+            <div class="container">
+                <button class="theme-button" (click)="ToggleTheme()">
+                    <lucide-icon name="chevron-right" [class.rotate]="showAdditionalButton"
+                        class="buttonicons menubutton"></lucide-icon>
+                </button>
+                <div *ngIf="showAdditionalButton" style="left: 80px;" id="additionalButton" [@slideInOut]>
+                    <a href="https://www.instagram.com/_the_crookedman_/" target="_blank">
+                        <button>
+                            <lucide-icon name="instagram" class="buttonicons"></lucide-icon>
+                        </button>
+                    </a>
+                    <a href="mailto:rahulraghuk@gmail.com" target="_blank">
+                        <button>
+                            <lucide-icon name="at-sign" class="buttonicons"></lucide-icon>
+                        </button>
+                    </a>
+                    <a href="https://github.com/Rahul24-R" target="_blank">
+                        <button>
+                            <lucide-icon name="github" class="buttonicons"></lucide-icon>
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rahul-r-8b79681a0/" target="_blank">
+                        <button>
+                            <lucide-icon name="linkedin" class="buttonicons"></lucide-icon>
+                        </button>
+                    </a>
+                    <a href="../../../assets/Rahul_Resume.pdf" download="Rahul_Resume.pdf">
+                        <button>
+                            <lucide-icon name="download" class="buttonicons"></lucide-icon>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="cubeitem">
+                <div class="cube1">
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                    <div class="side1"></div>
+                </div>
+                <div class="cube">
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                </div>
+            </div>
+        </div>
+        <div class="Portfolio-base-innerdiv">
+            <div class="left-div">
+                <div class="left-inter">
+                    <p class="fonttype1">Rahul R</p>
+                    <p class="fonttype2">24 Years</p>
+                    <p class="fonttype2">GE HealthCare</p>
+                </div>
+            </div>
+            <div class="right-div">
+                <img src="assets\profileImg.jpg" alt="profile-img" class="profile-image">
+                <div class="heading-div">
+                    <h2 class="h2font">Hello, I'm Rahul R, A Software Engineer with a Passion for Building Innovative
+                        Solutions.</h2>
+                    <p class="fonttype3"> Specializing in building scalable applications using .NET, Angular framework,
+                        and cloud platforms like AWS. With 2 years of experience, I thrive on solving complex problems
+                        and collaborating with cross-functional teams to deliver high-quality solutions.<br> Outside of
+                        coding, I contribute to open-source projects and stay abreast of emerging technologies. I'm
+                        passionate about pushing the boundaries of software engineering and eager to explore new
+                        opportunities for innovation and growth. Let's connect and build something amazing together!
+                    </p>
+                    <div class="updateddate">
+                        <p> Page last Updated - {{updateddate}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-content">
+        <div class="portfolio-content-inner">
+            <div class="portfolio-sidenav">
+                <ul class="tabs">
+                    <li tabindex="0" class="tab icon-Work"><a routerLink="/work-experience"><span>Work
+                                Experience</span></a></li>
+                    <li tabindex="0" class="tab icon-Education"><a routerLink="/education"><span>Education</span></a>
+                    </li>
+                    <li tabindex="0" class="tab icon-Achievements"><a
+                            routerLink="/achievements"><span>Achievements</span></a></li>
+                    <li tabindex="0" class="tab icon-Review"><a routerLink="/reviews"><span>Reviews</span></a></li>
+                </ul>
+            </div>
+            <div class="portfolio-contents">
+                <router-outlet></router-outlet>
+                <app-education class="mobileroute"></app-education>
+            </div>
+        </div>
+    </div>
+    <div class="mobileroute-achievements">
+        <app-achievements class="mobileroute"></app-achievements>
+    </div>
+    <div class="mobileroute-review">
+        <app-review class="mobileroute"></app-review>
+    </div>
+    
+</div>

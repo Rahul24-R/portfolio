@@ -1,0 +1,70 @@
+.workexperience{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.role{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.company{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.experienceyears{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+.timeperiod{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+.left-div{
+    min-width: 200px;
+    background-color: #6c696962;
+    border-radius: 25px;
+    padding: 8px;
+    padding-left: 15px;
+    min-height: 100px;
+}
+
+.right-div{
+    min-width: 200px;
+    background-color: #6c696962;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 15px;
+    min-height: 100px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .workexperience {
+        display: flex;
+        margin-bottom: 8px;
+        flex-direction: column;
+    }
+    .right-div {
+        min-width: auto;
+        background-color: #6c696962;
+        padding: 10px;
+        padding-left: 15px;
+        min-height: 100px;
+        border-radius: 0px;
+        margin-left: 0px;
+    }
+    .left-div[_ngcontent-ng-c3822171408] {
+        background-color: #6c696962;
+        padding: 8px;
+        padding-left: 15px;
+        min-height: 100px;
+        border-radius: 0px;
+    }
+    h1{
+        font-size: large;
+        margin-left: 35px;
+    }
+}

@@ -1,0 +1,74 @@
+<div class="heading">
+    <h1>Achievements</h1>
+</div>
+<div class="main-div">
+    <div class="left-div">
+        <h4> Note: Please Reload the page if twitter render is not proper</h4>
+        <h1>Educational Achievements</h1>
+        <div class="twitter-container" [innerHTML]="embeddedTweet"></div>
+    </div>
+    <div class="rigth-div">
+        <div class="right-div-inner">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <iframe src="https://asapkerala.gov.in/initiative/reboot-kerala-hackathon/"></iframe>
+                </mat-card-header>
+                <br>
+                <mat-card-content>
+                    <mat-card-subtitle>
+                        <lucide-icon name="award"></lucide-icon>
+                    </mat-card-subtitle>
+                    <mat-card-title>Reboot Kerala Hackathon 2020</mat-card-title>
+                    <br>
+                    <p>Finalist of Reboot Kerala Hackathon 2020, conducted by ASAP (Additional Skill Acquisition
+                        Programme) funded by the Government of Kerala.</p>
+                    <p>Proposing and implementing solution on the topic "Environment pollution detection and control"
+                        with the idea to of detecting water pollution at its source with in-house developed and
+                        calibrated sensors.</p>
+                    <br>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a href="https://asapkerala.gov.in/initiative/reboot-kerala-hackathon/" target="_blank">
+                        <button mat-button>Know More</button>
+                    </a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<div class="professional-achievements">
+    <div>
+        <h1>Professional Achievements</h1>
+    </div>
+    <div>
+        <mat-card class="professional-card">
+            <mat-card-header>
+                Team Recognitions
+            </mat-card-header>
+            <br>
+            <mat-card-content>
+                <mat-card-subtitle>
+                    <lucide-icon name="award"></lucide-icon>
+                </mat-card-subtitle>
+                <mat-card-title>Impact Awards</mat-card-title>
+                <div *ngFor="let Achievement of professionalachievements;let i = index" class="Achievement-items">
+                    <p (click)="toggleExpansion(i)">
+                        <strong>{{Achievement.type}}</strong> <span [hidden]="expandedStates[i]">▼</span><span
+                            [hidden]="!expandedStates[i]">▲</span>
+                    </p>
+                    <div *ngIf="expandedStates[i]" class="award-item">
+                        <div class="awarditemheader">
+                            <h4 class="awardheaders">Date : {{Achievement.date}}</h4>
+                            <h4 class="awardheaders">Awarded By: {{Achievement.presenter}}</h4>
+                        </div>
+                        <div class="awardcontent">
+                            <p>
+                                {{Achievement.description}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

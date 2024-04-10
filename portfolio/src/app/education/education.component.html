@@ -1,0 +1,71 @@
+<h1>Educational Qualification</h1>
+<div class="education-div">
+  <mat-card class="example-card" (mouseenter)="isHovered1 = true" (mouseleave)="isHovered1 = false">
+    <mat-card-header>
+      <mat-card-subtitle>
+        <lucide-icon name="book-open-text"></lucide-icon>
+        <div class="mat-subtitle">
+          Degree
+        </div>
+      </mat-card-subtitle>
+      <mat-card-title>NSS College of Engineering</mat-card-title>
+      <mat-card-subtitle>B.Tech in Electronics and Communication Engineering</mat-card-subtitle>
+      <mat-card-subtitle>CGPA: 8.36/10</mat-card-subtitle>
+    </mat-card-header>
+    <br>
+    <mat-card-content>
+      <p>{{ longText1 }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a href="https://www.nssce.ac.in/" target="_blank">
+        <button mat-button>Know More</button>
+      </a>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card" (mouseenter)="isHovered2 = true" (mouseleave)="isHovered2 = false">
+    <mat-card-header>
+      <mat-card-subtitle>
+        <lucide-icon name="book-open"></lucide-icon>
+        <div class="mat-subtitle">
+          Senior Secondary
+        </div>
+      </mat-card-subtitle>
+      <mat-card-title>Kendriya Vidyalaya Puranattukara</mat-card-title>
+      <mat-card-subtitle>Central Board of Secondary Education</mat-card-subtitle>
+      <mat-card-subtitle>Percentage: 91.4%</mat-card-subtitle>
+    </mat-card-header>
+    <br>
+    <mat-card-content>
+      <p>{{ longText2 }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a href="https://tiruchur.kvs.ac.in/" target="_blank">
+        <button mat-button>Know More</button>
+      </a>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card" (mouseenter)="isHovered3 = true" (mouseleave)="isHovered3 = false">
+    <mat-card-header>
+      <mat-card-subtitle>
+        <lucide-icon name="book"></lucide-icon>
+        <div class="mat-subtitle">
+          Secondary
+        </div>
+      </mat-card-subtitle>
+      <mat-card-title>Kendriya Vidyalaya Puranattukara</mat-card-title>
+      <mat-card-subtitle>Central Board of Secondary Education</mat-card-subtitle>
+      <mat-card-subtitle>CGPA: 9.6</mat-card-subtitle>
+    </mat-card-header>
+    <br>
+    <mat-card-content>
+      <p>{{ longText2 }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a href="https://tiruchur.kvs.ac.in/" target="_blank">
+        <button mat-button>Know More</button>
+      </a>
+    </mat-card-actions>
+  </mat-card>
+</div>

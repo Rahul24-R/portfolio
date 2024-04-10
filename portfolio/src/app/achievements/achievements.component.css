@@ -1,0 +1,76 @@
+.main-div{
+    display: flex;
+}
+
+.left-div{
+    width: 400px;
+}
+
+.rigth-div{
+    margin: 8px;
+}
+
+.example-card{
+    width: 450px;
+    height: 700px;
+}
+
+.right-div-inner{
+    margin-top: 109px;
+}
+
+iframe {
+    overflow: hidden;
+    height: 320px;
+    width: 450px;
+}
+.professional-achievements{
+    margin: 10px;
+}
+.professional-card{
+    height: auto;
+    width: auto;
+}
+.Achievement-items{
+    margin: 6px;
+}
+.awardheaders{
+    margin-bottom: 0px;
+    padding-left: 8px;
+    color: white;
+}
+.awardcontent{
+    margin-top: 8px;
+    padding: 10px;
+    color: white;
+}
+.award-item{
+    background-color: #6C6969;
+    border-radius: 8px;
+}
+.awarditemheader{
+    padding-top: 6px;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-div{
+        width: auto;
+        padding: 10px;
+    }
+    h1{
+        margin-left: 20px;
+    }
+    .heading{
+        text-align: center;
+    }
+    .right-div-inner{
+        margin-top: 9px;
+    }
+    .example-card{
+        width: auto;
+    }
+}

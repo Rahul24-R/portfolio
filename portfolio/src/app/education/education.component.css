@@ -1,0 +1,33 @@
+.example-card {
+    width: auto;
+    margin: 6px;
+    background-color: #6c696962;
+    max-width: 400px;
+}
+
+.education-div {
+    display: flex;
+}
+
+.custom-progress-bar {
+    background-color: #6C6969 !important;
+    color: #6C6969;
+}
+
+.example-card:hover{
+    transform: translateY(6px)
+}
+.mat-subtitle{
+   font-size: medium;
+   font-weight: 500;
+}
+
+@media only screen and (max-width: 800px) {
+    .education-div{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        padding-left: 6px;
+    }
+}
