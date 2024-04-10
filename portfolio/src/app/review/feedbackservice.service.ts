@@ -14,4 +14,5 @@ export class FeedbackserviceService {
   submitFeedback(feedback: Feedback): Observable<any> {
     return this.http.post<any>(this.apiUrl, feedback);
   }
+  
 }
