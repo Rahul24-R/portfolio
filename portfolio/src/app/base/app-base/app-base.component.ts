@@ -30,7 +30,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class AppBaseComponent {
   showAdditionalButton: boolean = false;
-  updateddate: string ="29/03/2024";
+  updateddate: string ="25/05/2024";
   constructor(private renderer: Renderer2) { }
   ToggleTheme() {
     this.showAdditionalButton = !this.showAdditionalButton;

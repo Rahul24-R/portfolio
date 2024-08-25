@@ -12,14 +12,18 @@ export class WorkExperienceComponent {
 
   ngOnInit() {
     let a: workexperiencemodal = {
-      years: 1.2,
+      years: 1.6,
       role: 'Software Engineer',
       startdate: 'March 2023',
       enddate: 'Present',
       company: 'GE HealthCare',
-      details: ["Spearheaded the development of a WPF (Windows Presentation Foundation) Application with MVVM Architecture as a Monitoring and Analytics tool covering 80-90% system workflows.",
-        "Equipped the WPF tool with technologies like SQLite for data management and LiveChart for data visualization.",
-        "Assisted the QSE team in enhancing automated testing using MSTest technology. Integrated auto upgrade methods, resulting in an 80% efficiency boost, and reducing the necessity for future template creations and storage."]
+      details:[
+        'Orchestrated the full lifecycle of a web application development project using React and ASP.NET Core, from conceptualization to deployment.This included requirements gathering, architecture design, full-stack development, and deployment, ensuring optimal performance, robust security, and a user-centric approach throughout',
+        'Spearheaded the development of a WPF (Windows Presentation Foundation) Application with MVVM Architecture as a Monitoring and Analytics tool covering 80-90% system workflows.',
+        ' Pioneered an enhanced DevOps implementation utilizing AWS services such as AWS CodePipeline and AWS CodeBuild, resulting in a scalable build process that reduced build and deployment times by 60%',
+        'Equipped the WPF tool with technologies like SQLite for data management and LiveChart for data visualization.',
+        'Assisted the QSE team in enhancing automated testing using MSTest technology. Integrated auto upgrade methods, resulting in an 80% efficiency boost, and reducing the necessity for future template creations and storage.'
+    ]
     }
     this.workexperience?.push(a);
     let b: workexperiencemodal = {
